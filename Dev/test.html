@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>テスト用ページ</title>
+    <!-- CSVからデータを取り出す処理 -->
+    <script>
+        fetch('data.csv')
+            .then(response => response.text())
+            .then(data => {
+                const csvArray = data.split('\n');
+                const header = csvArray.shift(); // Remove header row
+
+                const ul = document.getElementById('csv-list');
+
+                csvArray.forEach(row => {
+                    const rowData = row.split(',');
+
+                    const formattedRowData = [
+                        rowData[1] === "i7"
+                            ? '<img width="50px" src="img/i7.png">' + '<h2>' + rowData[0] + " " + rowData[2] + '</h2>'
+                            : rowData[1] === "Ryzen9"
+                            ? '<img width="50px" src="img/ryzen9.png">' + '<h2>' + rowData[0] + " " + rowData[2] + '</h2>'
+                            : '<h2>' + rowData[0] + " " + rowData[2] + '</h2>',
+                        rowData[3] + ' コア',
+                        rowData[4] + ' スレッド',
+                        rowData[5] + ' GHz',
+                        rowData[6] + ' GHz',
+                        '<b>' + 'Score:' + rowData[7],
+                    ];
+
+                    const listItemClass = rowData[0] === "Intel" ? "intel" : rowData[0] === "AMD" ? "amd" : "";
+
+                    const li = document.createElement('li');
+                    li.className = listItemClass;
+                    li.innerHTML = formattedRowData.join(' ');
+                    ul.appendChild(li);
+                });
+            });
+    </script>
+</head>
+<body>
+<ul id="csv-list"></ul>
+</body>
+
+
+</html>
