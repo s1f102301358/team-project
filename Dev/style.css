@@ -14,8 +14,10 @@ ul {
 }
 
 .intel {
-    background-color: #1e90ff;
+    background-color: lightskyblue;
+    border-radius: 15px;
 }
 .amd {
     background-color: orange;
+    border-radius: 15px;
 }

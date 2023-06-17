@@ -6,43 +6,118 @@
     <title>テスト用ページ</title>
     <!-- CSVからデータを取り出す処理 -->
     <script>
+        let parsed = [];
         fetch('data.csv')
             .then(response => response.text())
             .then(data => {
                 const csvArray = data.split('\n');
                 const header = csvArray.shift(); // Remove header row
-
-                const ul = document.getElementById('csv-list');
-
-                csvArray.forEach(row => {
-                    const rowData = row.split(',');
-
-                    const formattedRowData = [
-                        rowData[1] === "i7"
-                            ? '<img width="50px" src="img/i7.png">' + '<h2>' + rowData[0] + " " + rowData[2] + '</h2>'
-                            : rowData[1] === "Ryzen9"
-                            ? '<img width="50px" src="img/ryzen9.png">' + '<h2>' + rowData[0] + " " + rowData[2] + '</h2>'
-                            : '<h2>' + rowData[0] + " " + rowData[2] + '</h2>',
-                        rowData[3] + ' コア',
-                        rowData[4] + ' スレッド',
-                        rowData[5] + ' GHz',
-                        rowData[6] + ' GHz',
-                        '<b>' + 'Score:' + rowData[7],
-                    ];
-
-                    const listItemClass = rowData[0] === "Intel" ? "intel" : rowData[0] === "AMD" ? "amd" : "";
-
-                    const li = document.createElement('li');
-                    li.className = listItemClass;
-                    li.innerHTML = formattedRowData.join(' ');
-                    ul.appendChild(li);
-                });
+                parsed = csvArray.map(row => row.split(','));
+                applyFiltersAndSort();
             });
+        function applyFiltersAndSort() {
+            const ul = document.getElementById('csv-list');
+            ul.innerHTML = "";
+            const coreCount = parseInt(coreSelect.value);
+            const minBaseClock = parseFloat(baseClockSelect.value);
+            const maxBaseClock = minBaseClock + 0.4;
+            const minBoostClock = parseFloat(boostClockSelect.value);
+            const maxBoostClock = minBoostClock + 0.4;
+            // Filter by core count, base clock, and boost clock
+            const filtered = parsed.filter(row =>
+                (isNaN(coreCount) || parseInt(row[3]) === coreCount) &&
+                (isNaN(minBaseClock) || (parseFloat(row[5]) >= minBaseClock && parseFloat(row[5]) <= maxBaseClock)) &&
+                (isNaN(minBoostClock) || (parseFloat(row[6]) >= minBoostClock && parseFloat(row[6]) <= maxBoostClock))
+            );
+            // Sort by core count (desc)
+            filtered.sort((a, b) => parseInt(b[3]) - parseInt(a[3]));
+            // Add filtered and sorted data to the list
+            filtered.forEach(rowData => {
+                const formattedRowData = [
+                    rowData[1] === "i7"
+                        ? '<img width="50px" src="img/i7.png">' + '<h2>' + rowData[0] + " " + rowData[2] + '</h2>'
+                        : rowData[1] === "i9"
+                        ? '<img width="50px" src="img/i9.png">' + '<h2>' + rowData[0] + " " + rowData[2] + '</h2>'
+                        : rowData[1] === "i5"
+                        ? '<img width="50px" src="img/i5.png">' + '<h2>' + rowData[0] + " " + rowData[2] + '</h2>'
+                        : rowData[1] === "i3"
+                            ? '<img width="50px" src="img/i3.png">' + '<h2>' + rowData[0] + " " + rowData[2] + '</h2>'
+                        : rowData[1] === "xeon"
+                            ? '<img width="50px" src="img/xeon.png">' + '<h2>' + rowData[0] + " " + rowData[2] + '</h2>'
+                        : rowData[1] === "tr"
+                             ? '<img width="50px" src="img/tr.png">' + '<h2>' + rowData[0] + " " + rowData[2] + '</h2>'
+                        : rowData[1] === "Ryzen3"
+                        ? '<img width="50px" src="img/ryzen3.png">' + '<h2>' + rowData[0] + " " + rowData[2] + '</h2>'
+                        : rowData[1] === "Ryzen5"
+                        ? '<img width="50px" src="img/ryzen5.png">' + '<h2>' + rowData[0] + " " + rowData[2] + '</h2>'
+                        : rowData[1] === "Ryzen7"
+                            ? '<img width="50px" src="img/ryzen7.png">' + '<h2>' + rowData[0] + " " + rowData[2] + '</h2>'
+                        : rowData[1] === "Ryzen9"
+                        ? '<img width="50px" src="img/ryzen9.png">' + '<h2>' + rowData[0] + " " + rowData[2] + '</h2>'
+                        : '<h2>' + rowData[0] + " " + rowData[2] + '</h2>',
+                    rowData[3] + 'コア',
+                    rowData[4] + 'スレッド',
+                    'ベース' + rowData[5] + 'GHz',
+                    '最大' + rowData[6] + 'GHz',
+                ];
+                const listItemClass = rowData[0] === "Intel" ? "intel" : rowData[0] === "AMD" ? "amd" : "";
+                const li = document.createElement('li');
+                li.className = listItemClass;
+                li.innerHTML = formattedRowData.join(' ');
+                ul.appendChild(li);
+            });
+        }
     </script>
 </head>
 <body>
+<br>
+<br>
+コア数を選択：
+<select id="coreSelect" onchange="applyFiltersAndSort()">
+    <option value="">すべて</option>
+    <option value="1">1コア</option>
+    <option value="2">2コア</option>
+    <option value="4">4コア</option>
+    <option value="6">6コア</option>
+    <option value="8">8コア</option>
+    <option value="10">10コア</option>
+    <option value="12">12コア</option>
+    <option value="16">16コア</option>
+    <option value="18">18コア</option>
+    <option value="20">20コア</option>
+    <option value="24">24コア</option>
+</select>
+ベースクロックを選択：
+<select id="baseClockSelect" onchange="applyFiltersAndSort()">
+    <option value="">すべて</option>
+    <option value="1.0">1.0GHz-1.4GHz</option>
+    <option value="1.5">1.5GHz-1.9GHz</option>
+    <option value="2.0">2.0GHz-2.4GHz</option>
+    <option value="2.5">2.5GHz-2.9GHz</option>
+    <option value="3.0">3.0GHz-3.4GHz</option>
+    <option value="3.5">3.5GHz-3.9GHz</option>
+    <option value="4.0">4.0GHz-4.4GHz</option>
+    <option value="4.5">4.5GHz-4.9GHz</option>
+    <option value="5.0">5.0GHz-5.4GHz</option>
+    <option value="5.5">5.5GHz-5.9GHz</option>
+    <option value="6.0">6.0GHz-</option>
+</select>
+最大クロックを選択：
+<select id="boostClockSelect" onchange="applyFiltersAndSort()">
+    <option value="">すべて</option>
+    <option value="1.0">1.0GHz-1.4GHz</option>
+    <option value="1.5">1.5GHz-1.9GHz</option>
+    <option value="2.0">2.0GHz-2.4GHz</option>
+    <option value="2.5">2.5GHz-2.9GHz</option>
+    <option value="3.0">3.0GHz-3.4GHz</option>
+    <option value="3.5">3.5GHz-3.9GHz</option>
+    <option value="4.0">4.0GHz-4.4GHz</option>
+    <option value="4.5">4.5GHz-4.9GHz</option>
+    <option value="5.0">5.0GHz-5.4GHz</option>
+    <option value="5.5">5.5GHz-5.9GHz</option>
+    <option value="6.0">6.0GHz-</option>
+</select>
+<br><br>
 <ul id="csv-list"></ul>
 </body>
-
-
 </html>

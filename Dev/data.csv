@@ -1,3 +1,10 @@
-メーカー,種別,CPU名,コア数,スレッド数,ベースクロック,最大クロック,ベンチスコア
-Intel,i7,Core i7-9700K,8,8,3.6,4.9,15000
-AMD,Ryzen9,Ryzen9 5900X,12,24,3.7,4.8,18000
+メーカー,種別,CPU名,コア数,スレッド数,ベースクロック,最大クロック
+Intel,i9,Core i9-13900KS,24,32,3.2,6
+Intel,i9,Core i9-13900T,24,32,1.1,5.3
+Intel,i9,Core i9-13900,24,32,2,5.6
+Intel,i9,Core i9-13900F,24,32,2,5.6
+Intel,i9,Core i9-13900K,24,32,3,5.8
+Intel,i7,Core i7-9750H,6,12,2.6,4.8
+Intel,xeon,Xeon w9-3495X,56,112,1.9,4.8
+Intel,xeon,Xeon w9-3475X,36,72,2.2,4.8
+AMD,tr,Ryzen Threadripper 3990X,64,128,2.9,4.3
