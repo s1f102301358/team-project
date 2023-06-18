@@ -21,3 +21,23 @@ ul {
     background-color: orange;
     border-radius: 15px;
 }
+
+.apple{
+    background-color: #00004E;
+    color: white;
+    border-radius: 15px;
+}
+
+.sort-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+}
+.sort-container select {
+    margin-left: 10px;
+}
