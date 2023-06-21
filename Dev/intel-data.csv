@@ -133,4 +133,30 @@ Intel,Comet Lake,i7,Core i7-10510U,4,8,4.9
 Intel,Comet Lake,i5,Core i5-10310U,4,8,4.4
 Intel,Comet Lake,i5,Core i5-10210U,4,8,4.2
 Intel,Comet Lake,i3,Core i3-10110U,2,4,4.1
-,,,,,,
+Intel,Coffee Lake Refresh,i9,Core i9-9900K,8,16,5
+Intel,Coffee Lake Refresh,i9,Core i9-9900KF,8,16,5
+Intel,Coffee Lake Refresh,i7,Core i7-9700K,8,8,4.9
+Intel,Coffee Lake Refresh,i7,Core i7-9700F,8,8,4.9
+Intel,Coffee Lake Refresh,i5,Core i5-9600K,6,6,4.6
+Intel,Coffee Lake Refresh,i5,Core i5-9600KF,6,6,4.6
+Intel,Coffee Lake Refresh,i5,Core i5-9500,6,6,4.4
+Intel,Coffee Lake Refresh,i5,Core i5-9400,6,6,4.1
+Intel,Coffee Lake Refresh,i5,Core i5-9400F,6,6,4.1
+Intel,Coffee Lake Refresh,i3,Core i3-9350K,4,4,4.6
+Intel,Coffee Lake Refresh,i3,Core i3-9350KF,4,4,4.6
+Intel,Coffee Lake Refresh,i3,Core i3-9320,4,4,4.4
+Intel,Coffee Lake Refresh,i3,Core i3-9300,4,4,4.3
+Intel,Coffee Lake Refresh,i3,Core i3-9300T,4,4,3.8
+Intel,Coffee Lake Refresh,i3,Core i3-9100,4,4,4.2
+Intel,Coffee Lake Refresh,i3,Core i3-9100F,4,4,4.2
+Intel,Coffee Lake Refresh,i3,Core i3-9100T,4,4,3.7
+Intel,Coffee Lake Refresh,xeon,Xeon E-2286M,8,16,5
+Intel,Coffee Lake Refresh,xeon,Xeon E-2276M,6,12,4.7
+Intel,Coffee Lake Refresh,i9,Core i9-9980HK,8,16,5
+Intel,Coffee Lake Refresh,i9,Core i9-9980H,8,16,4.8
+Intel,Coffee Lake Refresh,i7,Core i7-9850H,6,12,4.6
+Intel,Coffee Lake Refresh,i7,Core i7-9850HF,6,12,4.5
+Intel,Coffee Lake Refresh,i7,Core i7-9750H,6,12,4.5
+Intel,Coffee Lake Refresh,i5,Core i5-9400H,4,8,4.3
+Intel,Coffee Lake Refresh,i5,Core i5-9300HF,4,8,4.1
+Intel,Coffee Lake Refresh,i5,Core i5-9300H,4,8,4.1
