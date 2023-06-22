@@ -1,5 +1,5 @@
 メーカー,世代,種別,CPU名,コア数,スレッド数,最大クロック
-Intel,Raptor Lake,i9,Core i9-13900KS,24,32,6
+Intel,Raptor Lake,i9,Core i9-13900KS,24,32,6.0
 Intel,Raptor Lake,i9,Core i9-13900T,24,32,5.3
 Intel,Raptor Lake,i9,Core i9-13900,24,32,5.6
 Intel,Raptor Lake,i9,Core i9-13900F,24,32,5.6
@@ -12,7 +12,7 @@ Intel,Raptor Lake,i7,Core i7-13700,16,24,5.2
 Intel,Raptor Lake,i7,Core i7-13700F,16,24,5.2
 Intel,Raptor Lake,i7,Core i7-13700T,16,24,4.9
 Intel,Raptor Lake,i5,Core i5-13600K,14,20,5.1
-Intel,Raptor Lake,i5,Core i5-13600KF,14,20,5
+Intel,Raptor Lake,i5,Core i5-13600KF,14,20,5.0
 Intel,Raptor Lake,i5,Core i5-13600,14,20,4.8
 Intel,Raptor Lake,i5,Core i5-13600T,14,20,4.8
 Intel,Raptor Lake,i5,Core i5-13500,14,20,4.8
@@ -30,8 +30,8 @@ Intel,Alder Lake,i9,Core i9-12900KF,16,24,5.2
 Intel,Alder Lake,i9,Core i9-12900,16,24,5.1
 Intel,Alder Lake,i9,Core i9-12900F,16,24,5.1
 Intel,Alder Lake,i9,Core i9-12900T,16,24,4.9
-Intel,Alder Lake,i7,Core i7-12700K,12,20,5
-Intel,Alder Lake,i7,Core i7-12700KF,12,20,5
+Intel,Alder Lake,i7,Core i7-12700K,12,20,5.0
+Intel,Alder Lake,i7,Core i7-12700KF,12,20,5.0
 Intel,Alder Lake,i7,Core i7-12700,12,20,4.9
 Intel,Alder Lake,i7,Core i7-12700F,12,20,4.9
 Intel,Alder Lake,i7,Core i7-12700T,12,20,4.6
@@ -54,8 +54,8 @@ Intel,Rocket Lake,i9,Core i9-11900KF,8,16,5.3
 Intel,Rocket Lake,i9,Core i9-11900,8,16,5.2
 Intel,Rocket Lake,i9,Core i9-11900F,8,16,5.2
 Intel,Rocket Lake,i9,Core i9-11900T,8,16,4.9
-Intel,Rocket Lake,i7,Core i7-11700K,8,16,5
-Intel,Rocket Lake,i7,Core i7-11700KF,8,16,5
+Intel,Rocket Lake,i7,Core i7-11700K,8,16,5.0
+Intel,Rocket Lake,i7,Core i7-11700KF,8,16,5.0
 Intel,Rocket Lake,i7,Core i7-11700,8,16,4.9
 Intel,Rocket Lake,i7,Core i7-11700F,8,16,4.9
 Intel,Rocket Lake,i7,Core i7-11700T,8,16,4.6
@@ -74,7 +74,7 @@ Intel,Rocket Lake,xeon,Xeon W-1390T,8,16,4.9
 Intel,Rocket Lake,xeon,Xeon W-1370P,8,16,5.2
 Intel,Rocket Lake,xeon,Xeon W-1370,8,16,5.2
 Intel,Rocket Lake,xeon,Xeon W-1350P,6,12,5.1
-Intel,Rocket Lake,xeon,Xeon W-1350,6,12,5
+Intel,Rocket Lake,xeon,Xeon W-1350,6,12,5.0
 Intel,Comet Lake,i9,Core i9-10900K,10,20,5.3
 Intel,Comet Lake,i9,Core i9-10900KF,10,20,5.3
 Intel,Comet Lake,i9,Core i9-10850K,10,20,5.2
@@ -89,7 +89,7 @@ Intel,Comet Lake,i7,Core i7-10700T,8,16,4.5
 Intel,Comet Lake,i5,Core i5-10600K,6,12,4.8
 Intel,Comet Lake,i5,Core i5-10600KF,6,12,4.8
 Intel,Comet Lake,i5,Core i5-10600,6,12,4.8
-Intel,Comet Lake,i5,Core i5-10600T,6,12,4
+Intel,Comet Lake,i5,Core i5-10600T,6,12,4.0
 Intel,Comet Lake,i5,Core i5-10500,6,12,4.5
 Intel,Comet Lake,i5,Core i5-10500T,6,12,3.8
 Intel,Comet Lake,i5,Core i5-10400,6,12,4.3
@@ -108,7 +108,7 @@ Intel,Comet Lake,xeon,Xeon W-1290T,10,20,4.7
 Intel,Comet Lake,xeon,Xeon W-1290TE,10,20,4.5
 Intel,Comet Lake,xeon,Xeon W-1270E,8,16,4.8
 Intel,Comet Lake,xeon,Xeon W-1270P,8,16,5.1
-Intel,Comet Lake,xeon,Xeon W-1270,8,16,5
+Intel,Comet Lake,xeon,Xeon W-1270,8,16,5.0
 Intel,Comet Lake,xeon,Xeon W-1270TE,8,16,4.4
 Intel,Comet Lake,xeon,Xeon W-1250E,6,12,4.7
 Intel,Comet Lake,xeon,Xeon W-1250P,6,12,4.8
@@ -117,9 +117,9 @@ Intel,Comet Lake,xeon,Xeon W-1250TE,6,12,3.8
 Intel,Comet Lake,i9,Core i9-10980HK,8,16,5.3
 Intel,Comet Lake,i9,Core i9-10885H,8,16,5.3
 Intel,Comet Lake,i7,Core i7-10875H,8,16,5.1
-Intel,Comet Lake,i7,Core i7-10870H,8,16,5
+Intel,Comet Lake,i7,Core i7-10870H,8,16,5.0
 Intel,Comet Lake,i7,Core i7-10850H,6,12,5.1
-Intel,Comet Lake,i7,Core i7-10750H,6,12,5
+Intel,Comet Lake,i7,Core i7-10750H,6,12,5.0
 Intel,Comet Lake,i5,Core i5-10500H,6,12,4.5
 Intel,Comet Lake,i5,Core i5-10400H,4,8,4.6
 Intel,Comet Lake,i5,Core i5-10300H,4,8,4.5
@@ -133,8 +133,8 @@ Intel,Comet Lake,i7,Core i7-10510U,4,8,4.9
 Intel,Comet Lake,i5,Core i5-10310U,4,8,4.4
 Intel,Comet Lake,i5,Core i5-10210U,4,8,4.2
 Intel,Comet Lake,i3,Core i3-10110U,2,4,4.1
-Intel,Coffee Lake Refresh,i9,Core i9-9900K,8,16,5
-Intel,Coffee Lake Refresh,i9,Core i9-9900KF,8,16,5
+Intel,Coffee Lake Refresh,i9,Core i9-9900K,8,16,5.0
+Intel,Coffee Lake Refresh,i9,Core i9-9900KF,8,16,5.0
 Intel,Coffee Lake Refresh,i7,Core i7-9700K,8,8,4.9
 Intel,Coffee Lake Refresh,i7,Core i7-9700F,8,8,4.9
 Intel,Coffee Lake Refresh,i5,Core i5-9600K,6,6,4.6
@@ -150,9 +150,9 @@ Intel,Coffee Lake Refresh,i3,Core i3-9300T,4,4,3.8
 Intel,Coffee Lake Refresh,i3,Core i3-9100,4,4,4.2
 Intel,Coffee Lake Refresh,i3,Core i3-9100F,4,4,4.2
 Intel,Coffee Lake Refresh,i3,Core i3-9100T,4,4,3.7
-Intel,Coffee Lake Refresh,xeon,Xeon E-2286M,8,16,5
+Intel,Coffee Lake Refresh,xeon,Xeon E-2286M,8,16,5.0
 Intel,Coffee Lake Refresh,xeon,Xeon E-2276M,6,12,4.7
-Intel,Coffee Lake Refresh,i9,Core i9-9980HK,8,16,5
+Intel,Coffee Lake Refresh,i9,Core i9-9980HK,8,16,5.0
 Intel,Coffee Lake Refresh,i9,Core i9-9980H,8,16,4.8
 Intel,Coffee Lake Refresh,i7,Core i7-9850H,6,12,4.6
 Intel,Coffee Lake Refresh,i7,Core i7-9850HF,6,12,4.5
