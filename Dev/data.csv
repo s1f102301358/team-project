@@ -1,4 +1,4 @@
-ÉÅÅ[ÉJÅ[,ê¢ë„,éÌï ,CPUñº,ÉRÉAêî,ÉXÉåÉbÉhêî,ç≈ëÂÉNÉçÉbÉN
+Ôªø„É°„Éº„Ç´„Éº,‰∏ñ‰ª£,Á®ÆÂà•,CPUÂêç,„Ç≥„Ç¢Êï∞,„Çπ„É¨„ÉÉ„ÉâÊï∞,ÊúÄÂ§ß„ÇØ„É≠„ÉÉ„ÇØ
 Intel,Raptor Lake,i9,Core i9-13900KS,24,32,6
 Intel,Raptor Lake,i9,Core i9-13900T,24,32,5.3
 Intel,Raptor Lake,i9,Core i9-13900,24,32,5.6
@@ -199,7 +199,219 @@ Intel,Coffee Lake,i5,Core i5-8269U,4,8,4.2
 Intel,Coffee Lake,i5,Core i5-8259U,4,8,3.8
 Intel,Coffee Lake,i3,Core i3-8109U,2,4,3.6
 Intel,Coffee Lake,i3,Core i3-8100H,4,4,N/A
-Intel,,,,,,
-Intel,,,,,,
-Intel,,,,,,
-Intel,,,,,,
+Intel,Kaby Lake,i7,Core i7-7700K,4,8,4.5
+Intel,Kaby Lake,i7,Core i7-7700,4,8,4.2
+Intel,Kaby Lake,i7,Core i7-7700T,4,8,3.8
+Intel,Kaby Lake,i5,Core i5-7600K,4,4,4.2
+Intel,Kaby Lake,i5,Core i5-7600,4,4,4.1
+Intel,Kaby Lake,i5,Core i5-7600T,4,4,3.7
+Intel,Kaby Lake,i5,Core i5-7500,4,4,3.8
+Intel,Kaby Lake,i5,Core i5-7500T,4,4,3.3
+Intel,Kaby Lake,i5,Core i5-7400,4,4,3.5
+Intel,Kaby Lake,i5,Core i5-7400T,4,4,3
+Intel,Kaby Lake,i3,Core i3-7350K,2,4,4.2
+Intel,Kaby Lake,i3,Core i3-7320,2,4,4.1
+Intel,Kaby Lake,i3,Core i3-7300,2,4,4
+Intel,Kaby Lake,i3,Core i3-7300T,2,4,3.5
+Intel,Kaby Lake,i3,Core i3-7100,2,4,3.9
+Intel,Kaby Lake,i3,Core i3-7100T,2,4,3.4
+Intel,Kaby Lake,i7,Core i7-8650U,4,8,4.2
+Intel,Kaby Lake,i7,Core i7-8550U,4,8,4
+Intel,Kaby Lake,i5,Core i5-8650U,4,8,3.6
+Intel,Kaby Lake,i5,Core i5-8650U,4,8,3.4
+Intel,Kaby Lake,i3,Core i3-8650U,2,4,3.4
+Intel,Sky Lake,i9,Core i9-7980XE,18,36,4.4
+Intel,Sky Lake,i9,Core i9-7960X,16,32,4.4
+Intel,Sky Lake,i9,Core i9-7940X,14,28,4.4
+Intel,Sky Lake,i9,Core i9-7920X,12,24,4.4
+Intel,Sky Lake,i9,Core i9-7900X,10,20,4.5
+Intel,Sky Lake,i7,Core i7-7820X,8,16,4.5
+Intel,Sky Lake,i7,Core i7-7800X,6,12,4
+Intel,Sky Lake,i7,Core i7-6700K,4,8,4.2
+Intel,Sky Lake,i7,Core i7-6700,4,8,4
+Intel,Sky Lake,i7,Core i7-6700T,4,8,3.6
+Intel,Sky Lake,i5,Core i5-6600K,4,4,3.9
+Intel,Sky Lake,i5,Core i5-6600,4,4,3.9
+Intel,Sky Lake,i5,Core i5-6600T,4,4,3.5
+Intel,Sky Lake,i5,Core i5-6500,4,4,3.6
+Intel,Sky Lake,i5,Core i5-6500T,4,4,3.1
+Intel,Sky Lake,i5,Core i5-6402P,4,4,3.4
+Intel,Sky Lake,i5,Core i5-6400,4,4,3.3
+Intel,Sky Lake,i5,Core i5-6400T,4,4,2.8
+Intel,Sky Lake,i3,Core i3-6320,2,4,3.9
+Intel,Sky Lake,i3,Core i3-6300,2,4,3.8
+Intel,Sky Lake,i3,Core i3-6300T,2,4,3.3
+Intel,Sky Lake,i3,Core i3-6100,2,4,3.7
+Intel,Sky Lake,i3,Core i3-6100T,2,4,3.2
+Intel,Sky Lake,i3,Core i3-6098P,2,4,3.6
+Intel,Sky Lake,xeon,Xeon E3-1535Mv5,4,8,3.8
+Intel,Sky Lake,xeon,Xeon E3-1505Mv5,4,8,3.7
+Intel,Sky Lake,i7,Core i7-6920HQ,4,8,3.8
+Intel,Sky Lake,i7,Core i7-6820HQ,4,8,3.6
+Intel,Sky Lake,i7,Core i7-6820HK,4,8,3.6
+Intel,Sky Lake,i7,Core i7-6700HQ,4,8,3.5
+Intel,Sky Lake,i7,Core i7-6660U,2,4,3.4
+Intel,Sky Lake,i7,Core i7-6650U,2,4,3.4
+Intel,Sky Lake,i7,Core i7-6600U,2,4,3.4
+Intel,Sky Lake,i7,Core i7-6567U,2,4,3.6
+Intel,Sky Lake,i7,Core i7-6560U,2,4,3.2
+Intel,Sky Lake,i7,Core i7-6500U,2,4,3.1
+Intel,Sky Lake,i5,Core i5-6440HQ,4,4,3.5
+Intel,Sky Lake,i5,Core i5-6360U,2,4,3.1
+Intel,Sky Lake,i5,Core i5-6300HQ,4,4,3.2
+Intel,Sky Lake,i5,Core i5-6300U,2,4,3
+Intel,Sky Lake,i5,Core i5-6287U,2,4,3.5
+Intel,Sky Lake,i5,Core i5-6267U,2,4,3.3
+Intel,Sky Lake,i5,Core i5-6260U,2,4,2.9
+Intel,Sky Lake,i5,Core i5-6200U,2,4,2.8
+Intel,Sky Lake,i3,Core i3-6167U,2,4,2.7
+Intel,Sky Lake,i3,Core i3-6100H,2,4,2.7
+Intel,Sky Lake,i3,Core i3-6100U,2,4,2.3
+Intel,Broadwell,i7,Core i7-6950X,10,20,4
+Intel,Broadwell,i7,Core i7-6900K,8,16,4
+Intel,Broadwell,i7,Core i7-6850K,6,12,4
+Intel,Broadwell,i7,Core i7-6800K,6,12,3.8
+Intel,Broadwell,i7,Core i7-5775C,4,8,3.7
+Intel,Broadwell,i7,Core i7-5775R,4,8,3.8
+Intel,Broadwell,i5,Core i5-5675C,4,4,3.6
+Intel,Broadwell,i5,Core i5-5675R,4,4,3.6
+Intel,Broadwell,i5,Core i5-5575R,4,4,3.3
+Intel,Broadwell,i7,Core i7-5950HQ,4,8,3.7
+Intel,Broadwell,i7,Core i7-5850HQ,4,8,3.6
+Intel,Broadwell,i7,Core i7-5750HQ,4,8,3.4
+Intel,Broadwell,i7,Core i7-5700HQ,4,8,3.5
+Intel,Broadwell,i7,Core i7-5650U,2,4,3.2
+Intel,Broadwell,i7,Core i7-5600U,2,4,3.2
+Intel,Broadwell,i7,Core i7-5557U,2,4,3.4
+Intel,Broadwell,i7,Core i7-5550U,2,4,3
+Intel,Broadwell,i7,Core i7-5500U,2,4,3
+Intel,Broadwell,i5,Core i5-5350H,2,4,3.5
+Intel,Broadwell,i5,Core i5-5350U,2,4,2.9
+Intel,Broadwell,i5,Core i5-5300U,2,4,2.9
+Intel,Broadwell,i5,Core i5-5287U,2,4,3.3
+Intel,Broadwell,i5,Core i5-5257U,2,4,3.1
+Intel,Broadwell,i5,Core i5-5250U,2,4,2.7
+Intel,Broadwell,i5,Core i5-5200U,2,4,2.7
+Intel,Broadwell,i3,Core-i3-5157U,2,4,2.5
+Intel,Broadwell,i3,Core-i3-5020U,2,4,2.2
+Intel,Broadwell,i3,Core-i3-5157U,2,4,2.1
+Intel,Broadwell,i3,Core-i3-5010U,2,4,2.1
+Intel,Broadwell,i3,Core-i3-5005U,2,4,2
+Intel,Haswell,i7,Core-i7-5960X,8,16,3.5
+Intel,Haswell,i7,Core-i7-5930K,6,12,3.7
+Intel,Haswell,i7,Core-i7-5820K,6,12,3.6
+Intel,Haswell,i7,Core-i7-4790K,4,8,4.4
+Intel,Haswell,i7,Core-i7-4790,4,8,4
+Intel,Haswell,i7,Core-i7-4790S,4,8,4
+Intel,Haswell,i7,Core-i7-4790T,4,8,3.9
+Intel,Haswell,i7,Core-i7-4785T,4,8,3.2
+Intel,Haswell,i7,Core-i7-4771,4,8,3.9
+Intel,Haswell,i7,Core-i7-4770K,4,8,3.9
+Intel,Haswell,i7,Core-i7-4770,4,8,3.9
+Intel,Haswell,i7,Core-i7-4770S,4,8,3.9
+Intel,Haswell,i7,Core-i7-4770R,4,8,3.9
+Intel,Haswell,i7,Core-i7-4770T,4,8,3.7
+Intel,Haswell,i7,Core-i7-4770TE,4,8,3.3
+Intel,Haswell,i7,Core-i7-4765T,4,8,3
+Intel,Haswell,i5,Core i5-4690K,4,4,3.9
+Intel,Haswell,i5,Core i5-4690,4,4,3.9
+Intel,Haswell,i5,Core i5-4690S,4,4,3.9
+Intel,Haswell,i5,Core i5-4690T,4,4,3.5
+Intel,Haswell,i5,Core i5-4670K,4,4,3.8
+Intel,Haswell,i5,Core i5-4670,4,4,3.8
+Intel,Haswell,i5,Core i5-4670S,4,4,3.8
+Intel,Haswell,i5,Core i5-4570R,4,4,3.7
+Intel,Haswell,i5,Core i5-4670T,4,4,3.3
+Intel,Haswell,i5,Core i5-4590,4,4,3.7
+Intel,Haswell,i5,Core i5-4590S,4,4,3.7
+Intel,Haswell,i5,Core i5-4590T,4,4,3
+Intel,Haswell,i5,Core i5-4570,4,4,3.6
+Intel,Haswell,i5,Core i5-4570S,4,4,3.6
+Intel,Haswell,i5,Core i5-4570R,4,4,3.2
+Intel,Haswell,i5,Core i5-4570T,2,4,3.6
+Intel,Haswell,i5,Core i5-4570TE,2,4,3.3
+Intel,Haswell,i5,Core i5-4460,4,4,3.4
+Intel,Haswell,i5,Core i5-4460S,4,4,3.4
+Intel,Haswell,i5,Core i5-4460T,4,4,2.7
+Intel,Haswell,i5,Core i5-4400,4,4,3.3
+Intel,Haswell,i5,Core i5-4400S,4,4,3.3
+Intel,Haswell,i5,Core i5-4430,4,4,3.2
+Intel,Haswell,i5,Core i5-4430S,4,4,3.2
+Intel,Haswell,i3,Core i3-4370,2,4,3.8
+Intel,Haswell,i3,Core i3-4360,2,4,3.7
+Intel,Haswell,i3,Core i3-4350,2,4,3.6
+Intel,Haswell,i3,Core i3-4340,2,4,3.5
+Intel,Haswell,i3,Core i3-4360T,2,4,3.2
+Intel,Haswell,i3,Core i3-4350T,2,4,3.1
+Intel,Haswell,i3,Core i3-4330T,2,4,3
+Intel,Haswell,i3,Core i3-4340TE,2,4,2.6
+Intel,Haswell,i3,Core i3-4330TE,2,4,2.4
+Intel,Haswell,i3,Core i3-4160,2,4,3.6
+Intel,Haswell,i3,Core i3-4150,2,4,3.5
+Intel,Haswell,i3,Core i3-4130,2,4,3.4
+Intel,Haswell,i3,Core i3-4160T,2,4,3.1
+Intel,Haswell,i3,Core i3-4150T,2,4,3
+Intel,Haswell,i3,Core i3-4130T,2,4,2.9
+Intel,Ivy Bridge,i7,Core i7-4960X,6,12,4
+Intel,Ivy Bridge,i7,Core i7-4930K,6,12,3.9
+Intel,Ivy Bridge,i7,Core i7-4820K,4,8,3.9
+Intel,Ivy Bridge,i7,Core i7-3770K,4,8,3.9
+Intel,Ivy Bridge,i7,Core i7-3700,4,8,3.9
+Intel,Ivy Bridge,i7,Core i7-3770S,4,8,3.9
+Intel,Ivy Bridge,i7,Core i7-3770T,4,8,3.7
+Intel,Ivy Bridge,i5,Core i5-3570K,4,4,3.8
+Intel,Ivy Bridge,i5,Core i5-3570,4,4,3.8
+Intel,Ivy Bridge,i5,Core i5-3570S,4,4,3.8
+Intel,Ivy Bridge,i5,Core i5-3570T,4,4,3.3
+Intel,Ivy Bridge,i5,Core i5-3550,4,4,3.7
+Intel,Ivy Bridge,i5,Core i5-3550S,4,4,3.7
+Intel,Ivy Bridge,i5,Core i5-3475S,4,4,3.6
+Intel,Ivy Bridge,i5,Core i5-3470,4,4,3.6
+Intel,Ivy Bridge,i5,Core i5-3470S,4,4,3.6
+Intel,Ivy Bridge,i5,Core i5-3470T,2,4,3.6
+Intel,Ivy Bridge,i5,Core i5-3450,4,4,3.5
+Intel,Ivy Bridge,i5,Core i5-3450S,4,4,3.5
+Intel,Ivy Bridge,i5,Core i5-3350P,4,4,3.3
+Intel,Ivy Bridge,i5,Core i5-3340,4,4,3.3
+Intel,Ivy Bridge,i5,Core i5-3340S,4,4,3.3
+Intel,Ivy Bridge,i5,Core i5-3335S,4,4,3.2
+Intel,Ivy Bridge,i5,Core i5-3330S,4,4,3.2
+Intel,Ivy Bridge,i5,Core i5-3300,4,4,3.2
+Intel,Ivy Bridge,i3,Core i3-3250,2,4,3.5
+Intel,Ivy Bridge,i3,Core i3-3245,2,4,3.4
+Intel,Ivy Bridge,i3,Core i3-3240,2,4,3.4
+Intel,Ivy Bridge,i3,Core i3-3225,2,4,3.3
+Intel,Ivy Bridge,i3,Core i3-3220,2,4,3.3
+Intel,Ivy Bridge,i3,Core i3-3210,2,4,3.2
+Intel,Ivy Bridge,i3,Core i3-3250T,2,4,3
+Intel,Ivy Bridge,i3,Core i3-3240T,2,4,2.9
+Intel,Ivy Bridge,i3,Core i3-3220T,2,4,2.8
+Intel,Sandy Bridge,i7,Core i7-3960X,6,12,3.9
+Intel,Sandy Bridge,i7,Core i7-3960K,6,12,3.8
+Intel,Sandy Bridge,i7,Core i7-3820,4,8,3.9
+Intel,Sandy Bridge,i7,Core i7-2700K,4,8,3.9
+Intel,Sandy Bridge,i7,Core i7-2600K,4,8,3.8
+Intel,Sandy Bridge,i7,Core i7-2600K,4,8,3.8
+Intel,Sandy Bridge,i7,Core i7-2600S,4,8,3.8
+Intel,Sandy Bridge,i5,Core i5-2550K,4,4,3.8
+Intel,Sandy Bridge,i5,Core i5-2500K,4,4,3.7
+Intel,Sandy Bridge,i5,Core i5-2500,4,4,3.7
+Intel,Sandy Bridge,i5,Core i5-2500S,4,4,3.7
+Intel,Sandy Bridge,i5,Core i5-2500T,4,4,3.3
+Intel,Sandy Bridge,i5,Core i5-2450P,4,4,3.5
+Intel,Sandy Bridge,i5,Core i5-2400,4,4,3.4
+Intel,Sandy Bridge,i5,Core i5-2380P,4,4,3.4
+Intel,Sandy Bridge,i5,Core i5-2405S,4,4,3.3
+Intel,Sandy Bridge,i5,Core i5-2400S,4,4,3.3
+Intel,Sandy Bridge,i5,Core i5-2320,4,4,3.3
+Intel,Sandy Bridge,i5,Core i5-2310,4,4,3.2
+Intel,Sandy Bridge,i5,Core i5-2300,4,4,3.1
+Intel,Sandy Bridge,i5,Core i5-2390T,2,4,3.5
+Intel,Sandy Bridge,i3,Core i3-2130,2,4,3.4
+Intel,Sandy Bridge,i3,Core i3-2125,2,4,3.3
+Intel,Sandy Bridge,i3,Core i3-2120,2,4,3.3
+Intel,Sandy Bridge,i3,Core i3-2120T,2,4,2.6
+Intel,Sandy Bridge,i3,Core i3-2105,2,4,3.1
+Intel,Sandy Bridge,i3,Core i3-2102,2,4,3.1
+Intel,Sandy Bridge,i3,Core i3-2100,2,4,3.1
+Intel,Sandy Bridge,i3,Core i3-2100T,2,4,2.5
