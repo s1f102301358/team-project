@@ -7,17 +7,21 @@
     <link rel="stylesheet" type="text/js" href="js/index.js">
     <title>CPU Hub</title>
     <style>
-        .hamburger{
+        .hamburger {
             display: inline-block;
-            cursor: pointe;
+            cursor: pointer;
             padding: 10px;
         }
 
-        .hamburger .line{
+        .hamburger .line {
             width: 30px;
             height: 4px;
             background-color:#000;
             margin: 6px 0;
+        }
+
+        #menu {
+            display: none;
         }
 
         #menu.open {
@@ -32,28 +36,35 @@
 
         #menu ul li {
             padding: 10px;
-            background-color: : #f2f2f2;
+            background-color: #f2f2f2;
         }
     </style>
     <script>
-        function togglemenu(){
+        function toggleMenu(){
             var menu = document.getElementById("menu");
-            menu.classList.toggl("open");
+            menu.classList.toggle("open");
         }
     </script>
 </head>
 <body>
-   <div class="hamburger" onclick="togleMenu()">
+   <div class="hamburger" onclick="toggleMenu()">
+    <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
    </div>
 
-<div id="menu">
+   <div id="menu">
     <ul>
         <li>メニュー１</li>
         <li>メニュー２</li>
         <li>メニュー３</li>
     </ul>
-</div>
+    <div id="menu">
+        <ul>
+            <li>メニュー１</li>
+            <li>メニュー２</li>
+            <li>メニュー３</li>
+        </ul>
+    </div>
 </body>
 </html>
