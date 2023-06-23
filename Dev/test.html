@@ -6,7 +6,7 @@
     <title>テスト用ページ</title>
     <script>
         let parsed = [];
-        fetch('intel-data.csv')
+        fetch('data.csv')
             .then(response => response.text())
             .then(data => {
                 const csvArray = data.split('\n');
@@ -59,10 +59,14 @@
                         ? '<img width="50px" src="img/ryzen7.png">' + '<h2>' + rowData[0] + " " + rowData[3] + '</h2>'
                         : rowData[2] === "Ryzen9"
                         ? '<img width="50px" src="img/ryzen9.png">' + '<h2>' + rowData[0] + " " + rowData[3] + '</h2>'
+                        : rowData[2] === "m1"
+                        ? '<img width="50px" src="img/m1.png">' + '<h2>' + rowData[0] + " " + rowData[3] + '</h2>'
+                        : rowData[2] === "m2"
+                        ? '<img width="50px" src="img/m2.png">' + '<h2>' + rowData[0] + " " + rowData[3] + '</h2>'
                         : '<h2>' + rowData[0] + " " + rowData[2] + '</h2>',
                     '<b>' + rowData[4] + 'コア',
                     rowData[5] + 'スレッド' + '</b>',
-                    '@' + rowData[6] + 'GHz',
+                    '@ ' + rowData[6] + 'GHz',
                 ];
                 const listItemClass = rowData[0] === "Intel" ? "intel" : rowData[0] === "AMD" ? "amd" : rowData[0] === "Apple" ? "apple" : "";
                 const li = document.createElement('li');
@@ -74,7 +78,8 @@
     </script>
 </head>
 <body>
-<br>
+<div class="header">
+</div>
 <br>
 <div class="sort-container">
 コア数:
@@ -125,6 +130,10 @@
         <option value="Nehalem">【1stGen】Nehalem</option>
     </optgroup>
     <optgroup label="AMD">
+    </optgroup>
+    <optgroup label="Apple">
+        <option value="M2">M2</option>
+        <option value="M1">M1</option>
     </optgroup>
 </select>
 
