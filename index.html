@@ -18,6 +18,19 @@
             height: 4px;
             background-color:#000;
             margin: 6px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .hamburger.open .line:nth-child(1){
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .hamburger.open .line:nth-child(2){
+            opacity: 0;
+        }
+
+        .hamburger.open .line:nth-child(3){
+            transform: rotate(-45deg) translate(6px, -6px);
         }
 
         #menu {
@@ -66,5 +79,16 @@
             <li>メニュー３</li>
         </ul>
     </div>
+
+    <script>
+        document.addEventListener("click", function(event){
+            var menu = document.getElementById("menu");
+            var hamburger = document.querySelector(".hamburger");
+
+            if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+                menu.classList.remove("open");
+            }
+        });
+    </script>
 </body>
 </html>
