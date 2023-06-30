@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/js" href="js/index.js">
     <title>CPU Hub</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css">
     <script>
         function toggleMenu() {
             var menu = document.getElementById("menu");
@@ -40,7 +42,43 @@
             }
         });
     </script>
-    <h1></h1>
-    
+   <div class="wrapper">
+       <h1>Slide show</h1>
+       <ul class="slider">
+           <li class="slider-item slider-item01"></li>
+           <li class="slider-item slider-item02"></li>
+           <li class="slider-item slider-item03"></li>
+       </ul>
+       <!--/wrapper--></div>
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+   <script>
+       function toggleMenu() {
+           var menu = document.getElementById("menu");
+           menu.classList.toggle("open");
+       }
+
+       $('.slider').slick({
+           autoplay: true,//自動的に動き出すか。初期値はfalse。
+           autoplaySpeed: 3000,//次のスライドに切り替わる待ち時間
+           speed:1000,//スライドの動きのスピード。初期値は300。
+           infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+           slidesToShow: 1,//スライドを画面に3枚見せる
+           slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
+           arrows: true,//左右の矢印あり
+           prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+           nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+           dots: true,//下部ドットナビゲーションの表示
+           pauseOnFocus: false,//フォーカスで一時停止を無効
+           pauseOnHover: false,//マウスホバーで一時停止を無効
+           pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
+       });
+
+       //スマホ用：スライダーをタッチしても止めずにスライドをさせたい場合
+       $('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
+           $('.slider').slick('slickPlay');
+       });
+   </script>
 </body>
 </html>
