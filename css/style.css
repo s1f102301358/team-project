@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("background.jpg");
+    background-image: url("https://imgs.gvm.com.tw/upload/gallery/20221004/118269.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,6 +11,8 @@ body {
     display: inline-block;
     cursor: pointer;
     padding: 10px;
+    position: relative;
+    z-index: 100;
 }
 
 .hamburger .line {
@@ -18,7 +20,7 @@ body {
     height: 4px;
     background-color:#000;
     margin: 6px 0;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .hamburger.open .line:nth-child(1) {
@@ -27,6 +29,7 @@ body {
 
 .hamburger.open .line:nth-child(2) {
     opacity: 0;
+    transform: translateX(-100%);
 }
 
 .hamburger.open .line:nth-child(3) {
@@ -35,17 +38,19 @@ body {
 
 #menu {
     position: fixed;
-    left: -200px;
+    left: 0;
     top: 0;
-    width: 200px;
+    width: 100px;
     height: 100vh;
     background-color: #f2f2f2;
     padding: 20px;
-    transition: left 0.3s ease;
+    transition: left 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
 }
 
 #menu.open {
-    left: 0;
+    transform: translateX(0%);
+    opacity: 1;
 }
 
 #menu ul {
@@ -56,5 +61,4 @@ body {
 
 #menu ul li {
     padding: 10px;
-    background-color: #f2f2f2;
 }
