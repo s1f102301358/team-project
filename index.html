@@ -6,59 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/js" href="js/index.js">
     <title>CPU Hub</title>
-    <style>
-        .hamburger {
-            display: inline-block;
-            cursor: pointer;
-            padding: 10px;
-        }
-
-        .hamburger .line {
-            width: 30px;
-            height: 4px;
-            background-color:#000;
-            margin: 6px 0;
-            transition: transform 0.3s ease;
-        }
-
-        .hamburger.open .line:nth-child(1) {
-            transform: rotate(45deg) translate(6px, 6px);
-        }
-
-        .hamburger.open .line:nth-child(2) {
-            opacity: 0;
-        }
-
-        .hamburger.open .line:nth-child(3) {
-            transform: rotate(-45deg) translate(6px, -6px);
-        }
-
-        #menu {
-            position: fixed;
-            left: -200px;
-            top: 0;
-            width: 200px;
-            height: 100vh;
-            background-color: #f2f2f2;
-            padding: 20px;
-            transition: left 0.3s ease;
-        }
-
-        #menu.open {
-            left: 0;
-        }
-
-        #menu ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        #menu ul li {
-            padding: 10px;
-            background-color: #f2f2f2;
-        }
-    </style>
+   
     <script>
         function toggleMenu() {
             var menu = document.getElementById("menu");
@@ -91,5 +39,7 @@
             }
         });
     </script>
+    <h1></h1>
+    
 </body>
 </html>
