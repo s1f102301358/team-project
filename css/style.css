@@ -29,6 +29,7 @@ body {
 
 .hamburger.open .line:nth-child(2) {
     opacity: 0;
+    transform: translateX(-100%);
 }
 
 .hamburger.open .line:nth-child(3) {
@@ -43,8 +44,7 @@ body {
     height: 100vh;
     background-color: #f2f2f2;
     padding: 20px;
-    transition: left 0.3s ease;
-    transform: translateX(-100%);
+    transition: left 0.3s ease, opacity 0.3s ease;
     opacity: 0;
 }
 
