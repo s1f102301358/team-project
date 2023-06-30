@@ -54,6 +54,8 @@ body {
     padding: 20px;
     transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 0;
+    transform: translateX(-100%);
+    z-index: 99;
 }
 
 #menu.open {
@@ -69,4 +71,8 @@ body {
 
 #menu ul li {
     padding: 10px;
+}
+
+#hamburger.open {
+    display: none;
 }
