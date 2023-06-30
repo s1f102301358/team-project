@@ -23,17 +23,25 @@ body {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.hamburger:not(.open) .line:nth-child(2) {
+    opacity: 1;
+}
+
+.hamburger:not(.open) .line:nth-child(1),
+.hamburger:not(.open) .line:nth-child(3) {
+    transform: translateY(0);
+}
+
 .hamburger.open .line:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
+    transform: translateY(12px) rotate(45deg);
 }
 
 .hamburger.open .line:nth-child(2) {
     opacity: 0;
-    transform: translateX(-100%);
 }
 
 .hamburger.open .line:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
+    transform: translateY(-12px) rotate(-45deg);
 }
 
 #menu {
@@ -44,7 +52,7 @@ body {
     height: 100vh;
     background-color: #f2f2f2;
     padding: 20px;
-    transition: left 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 0;
 }
 
