@@ -1,5 +1,6 @@
 li {
     padding: 8px;
+    margin: 10px;
     border-bottom: 1px solid #ccc;
     font-family: Arial, sans-serif; /* 任意のフォントを設定 */
     font-size: 14px; /* 任意のフォントサイズを設定 */
@@ -13,12 +14,10 @@ ul {
     margin: 0;
 }
 
-.intel {
-    background-color: lightskyblue;
-    border-radius: 15px;
+body {
+    margin: 0;
+    background-color: #FFFFEE;
 }
-
-
 
 .intel {
     background-color: lightskyblue;
@@ -39,8 +38,8 @@ ul {
 .header {
     background-color: orange;
     height: 70px;
-    margin: 0%;
-    padding-top: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .sort-container {
