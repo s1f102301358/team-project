@@ -1,5 +1,6 @@
 li {
     padding: 8px;
+    margin: 10px;
     border-bottom: 1px solid #ccc;
     font-family: Arial, sans-serif; /* 任意のフォントを設定 */
     font-size: 14px; /* 任意のフォントサイズを設定 */
@@ -13,30 +14,9 @@ ul {
     margin: 0;
 }
 
-.intel {
-    background-color: lightskyblue;
-    border-radius: 15px;
-}
-
-.platinum {
-    background-color: dimgray;
-    border-radius: 15px;
-    color: white;
-}
-
-.gold {
-    background-color: gold;
-    border-radius: 15px;
-}
-
-.silver {
-    background-color: silver;
-    border-radius: 15px;
-}
-
-.bronze {
-    background-color: sandybrown;
-    border-radius: 15px;
+body {
+    margin: 0;
+    background-color: #FFFFEE;
 }
 
 .intel {
@@ -56,19 +36,29 @@ ul {
 }
 
 .header {
-    background-color: aqua;
+    background-color: orange;
+    height: 70px;
+    margin: 0;
+    padding: 0;
 }
 
 .sort-container {
-    position: fixed;
-    top: 10px;
     right: 10px;
     background-color: white;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     z-index: 1000;
+    position: absolute;
+    top: 90px;
 }
+
+.sticky {
+    position: fixed;
+    top: 10px;
+}
+
+
 .sort-container select {
     margin-left: 10px;
 }

@@ -415,23 +415,3 @@ Intel,Sandy Bridge,i3,Core i3-2105,2,4,3.1
 Intel,Sandy Bridge,i3,Core i3-2102,2,4,3.1
 Intel,Sandy Bridge,i3,Core i3-2100,2,4,3.1
 Intel,Sandy Bridge,i3,Core i3-2100T,2,4,2.5
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8444H,16,32,4
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8450H,28,56,3.5
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8452Y,36,72,3.2
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8454H,32,64,3.4
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8458P,44,88,3.8
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8460H,40,80,3.8
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8460Y+,40,80,3.7
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8461V,48,96,4.1
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8462Y,32,64,4.1
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8468,48,96,3.8
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8468V,48,96,3.8
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8470,52,104,3.8
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8470N,52,104,3.8
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8470Q,52,104,3.6
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8471N,52,104,3.8
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8480+,56,112,3.6
-Intel,Sapphire Rapids,platinum,Xeon Platinum 8490H,60,120,3.8
-Intel,Sapphire Rapids,gold,Xeon Gold 5411N,24,48,3.9
-Intel,Sapphire Rapids,gold,Xeon Gold 5412U,24,48,3.9
-Intel,Sapphire Rapids,gold,Xeon Gold 5415+,8,16,4.1
