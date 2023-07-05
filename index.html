@@ -18,30 +18,6 @@
     </script>
 </head>
 <body>
-   <div class="hamburger" onclick="toggleMenu()">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-   </div>
-
-    <div id="menu">
-        <ul>
-            <li>メニュー１</li>
-            <li>メニュー２</li>
-            <li>メニュー３</li>
-        </ul>
-    </div>
-
-    <script>
-        document.addEventListener("click", function(event) {
-            var menu = document.getElementById("menu");
-            var hamburger = document.querySelector(".hamburger");
-
-            if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-                menu.classList.remove("open");
-            }
-        });
-    </script>
    <div class="wrapper">
        <h1>Slide show</h1>
        <ul class="slider">
@@ -78,6 +54,33 @@
        //スマホ用：スライダーをタッチしても止めずにスライドをさせたい場合
        $('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
            $('.slider').slick('slickPlay');
+       });
+   </script>
+
+
+
+   <div class="hamburger" onclick="toggleMenu()">
+       <div class="line"></div>
+       <div class="line"></div>
+       <div class="line"></div>
+   </div>
+
+   <div id="menu">
+       <ul>
+           <li>メニュー１</li>
+           <li>メニュー２</li>
+           <li>メニュー３</li>
+       </ul>
+   </div>
+
+   <script>
+       document.addEventListener("click", function(event) {
+           var menu = document.getElementById("menu");
+           var hamburger = document.querySelector(".hamburger");
+
+           if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+               menu.classList.remove("open");
+           }
        });
    </script>
 </body>

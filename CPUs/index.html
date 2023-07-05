@@ -79,9 +79,64 @@
     </script>
 </head>
 <body>
-<div class="header">
-    CPU Hub
+<header>
+    <div class="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header>
+<div class="sidebar">
+    <ul>
+        <a href="test.html"><li>Menu1</li></a>
+        <a href="#"><li>Menu2</li></a>
+        <a href="#"><li>Menu3</li></a>
+    </ul>
 </div>
+<script>
+    var sidebar = document.querySelector('.sidebar');
+    var close = document.getElementById('close');
+
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        if (sidebar.style.transform === 'translateX(0px)') {
+            sidebar.style.transform = 'translateX(-100%)';
+        } else {
+            sidebar.style.transform = 'translateX(0)';
+        }
+    });
+
+    close.onclick = function() {
+        sidebar.style.transform = 'translateX(-100%)';
+    }
+
+    var menuOpen = false;
+    var menuBtn = document.querySelector('.hamburger-menu');
+    var menuBtnBurger = document.querySelector('.burger');
+
+    menuBtn.addEventListener('click', () => {
+        if (!menuOpen) {
+            menuBtn.classList.add('open');
+            menuBtnBurger.classList.add('open');
+            menuOpen = true;
+        } else {
+            menuBtn.classList.remove('open');
+            menuBtnBurger.classList.remove('open');
+            menuOpen = false;
+        }
+    });
+
+    // ハンバーガーメニューが開かれた時
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        document.getElementById('sidebar').style.display = 'block';
+        document.getElementById('mask').style.display = 'block';
+    });
+
+    // マスク部分がクリックされた時
+    document.getElementById('mask').addEventListener('click', function() {
+        this.style.display = 'none';
+        document.getElementById('sidebar').style.display = 'none';
+    });
+</script>
 <br>
 <div class="sort-container">
 コア数:
@@ -146,8 +201,13 @@
     <option value="6.0">6.0GHz-</option>
 </select>
 </div>
+
+
 <br><br>
+
 <ul id="csv-list"></ul>
+
+
 </body>
 <script>
     window.onscroll = function() {myFunction()};
