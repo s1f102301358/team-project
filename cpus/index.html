@@ -2,8 +2,9 @@
 <html lang="ja">
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="sidebar.css">
     <meta charset="UTF-8">
-    <title>テスト用ページ</title>
+    <title>CPU Hub</title>
     <script>
         let parsed = [];
         fetch('data.csv')
@@ -49,14 +50,6 @@
                         ? '<img width="50px" src="img/i3.png">' + '<h2>' + rowData[0] + " " + rowData[3] + '</h2>'
                         : rowData[2] === "xeon"
                         ? '<img width="50px" src="img/xeon.png">' + '<h2>' + rowData[0] + " " + rowData[3] + '</h2>'
-                        : rowData[2] === "platinum"
-                        ? '<img width="50px" src="img/platinum.png">' + '<h2>' + rowData[0] + " " + rowData[3] + '</h2>'
-                        : rowData[2] === "gold"
-                        ? '<img width="50px" src="img/gold.png">' + '<h2>' + rowData[0] + " " + rowData[3] + '</h2>'
-                        : rowData[2] === "silver"
-                        ? '<img width="50px" src="img/silver.png">' + '<h2>' + rowData[0] + " " + rowData[3] + '</h2>'
-                        : rowData[2] === "bronze"
-                        ? '<img width="50px" src="img/bronze.png">' + '<h2>' + rowData[0] + " " + rowData[3] + '</h2>'
                         : rowData[2] === "tr"
                         ? '<img width="50px" src="img/tr.png">' + '<h2>' + rowData[0] + " " + rowData[3] + '</h2>'
                         : rowData[2] === "Ryzen3"
@@ -83,11 +76,47 @@
                 ul.appendChild(li);
             });
         }
+
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
 </head>
 <body>
-<div class="header">
+
+<!-- ヘッダー&サイドバー部分 -->
+<header>
+    <div class="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header>
+<div class="sidebar">
+    <ul>
+        <div class="sidebar-item">
+            <a href="test.html"><li>Menu1</li></a>
+            <a href="#"><li>Menu2</li></a>
+            <a href="#"><li>Menu3</li></a>
+        </div>
+    </ul>
 </div>
+<script>
+    var sidebar = document.querySelector('.sidebar');
+    var close = document.getElementById('close');
+
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        if (sidebar.style.transform === 'translateX(0px)') {
+            sidebar.style.transform = 'translateX(-100%)';
+        } else {
+            sidebar.style.transform = 'translateX(0)';
+        }
+    });
+
+    close.onclick = function() {
+        sidebar.style.transform = 'translateX(-100%)';
+    }
+</script>
+<!-- ここまで  -->
+
 <br>
 <div class="sort-container">
 コア数:
@@ -105,14 +134,6 @@
     <option value="18">18コア</option>
     <option value="20">20コア</option>
     <option value="24">24コア</option>
-    <option value="28">28コア</option>
-    <option value="32">32コア</option>
-    <option value="38">38コア</option>
-    <option value="40">40コア</option>
-    <option value="48">48コア</option>
-    <option value="52">52コア</option>
-    <option value="56">56コア</option>
-    <option value="64">64コア</option>
 </select>
 並び替え:
 <select id="sortCompare" onchange="applyFiltersAndSort()">
@@ -148,7 +169,6 @@
 最大クロック:
 <select id="boostClockSelect" onchange="applyFiltersAndSort()">
     <option value="">すべて</option>
-    <option value="1.0">1.0GHz-1.4GHz</option>
     <option value="1.5">1.5GHz-1.9GHz</option>
     <option value="2.0">2.0GHz-2.4GHz</option>
     <option value="2.5">2.5GHz-2.9GHz</option>
@@ -161,7 +181,27 @@
     <option value="6.0">6.0GHz-</option>
 </select>
 </div>
-<br><br>
+
+
+<br><br><br><br><br>
+
 <ul id="csv-list"></ul>
+
+<div class="mask"></div>
+
 </body>
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.querySelector(".sort-container");
+    var sticky = header.offsetTop - 5;
+
+    function myFunction() {
+        if(window.pageYOffset > sticky){
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
 </html>

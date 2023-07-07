@@ -16,7 +16,7 @@ ul {
 
 body {
     margin: 0;
-    background-color: #FFFFEE;
+    background-color: #ececec;
 }
 
 .intel {
@@ -64,7 +64,7 @@ body {
 }
 
 header {
-    background-color: #FFC58B;
+    background-color: #303030;
     position: fixed;
     width: 100%;
     height: 30px;
@@ -120,21 +120,6 @@ header {
 }
 .sidebar li:hover {
     color: #000;
-}
-.hamburger-menu.open div {
-    transform: rotate(45deg);
-    position: relative;
-}
-
-.hamburger-menu.open div::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    transform: rotate(90deg);
-}
-
-.hamburger-menu.open div::after {
-    transform: rotate(90deg);
 }
 
 .sidebar li:hover {
