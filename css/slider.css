@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-/*==================================================
-スライダーのためのcss
-===================================*/
 .slider {
     position:relative;
     z-index: 1;
@@ -16,11 +13,11 @@
 }
 
 .slider-item02 {
-    background:url(../img/img_02.jpg);
+    background:url(../cpus/img/img_02.jpg);
 }
 
 .slider-item03 {
-    background:url(../img/img_03.jpg);
+    background:url(../cpus/img/img_03.jpg);
 }
 
 .slider-item {
@@ -38,7 +35,7 @@
 .slick-next {
     position: absolute;/*絶対配置にする*/
     z-index: 3;
-    top: 42%;
+    top: 50%;
     cursor: pointer;/*マウスカーソルを指マークに*/
     outline: none;/*クリックをしたら出てくる枠線を消す*/
     border-top: 2px solid #ccc;/*矢印の色*/
@@ -73,10 +70,10 @@
 
 .slick-dots button {
     color: transparent;
-    width:10px;/*ドットボタンのサイズ*/
+    width:5px;/*ドットボタンのサイズ*/
     height:15px;/*ドットボタンのサイズ*/
     display:block;
-    border-radius:10%;
+    border-radius:60%;
     background:#fff;/*ドットボタンの色*/
 }
 
@@ -84,44 +81,17 @@
     background:#000;/*ドットボタンの現在地表示の色*/
 }
 
-/*========= レイアウトのためのCSS ===============*/
+
 ul{
     margin:0;
     padding: 0;
     list-style: none;
 }
 
-a{
-    color: #fff;
-}
 
-a:hover,
-a:active{
-    text-decoration: none;
-}
 
-h1{
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size:6vw;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
 
 .wrapper{
     position: relative;
 }
 
-.container{
-    background:#555;
-}
-
-.container p{
-    padding: 300px 0;
-    text-align: center;
-    color: #fff;
-}
