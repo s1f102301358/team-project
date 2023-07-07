@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="sidebar.css">
     <meta charset="UTF-8">
     <title>CPU Hub</title>
     <script>
@@ -80,6 +81,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
 </head>
 <body>
+
+<!-- ヘッダー&サイドバー部分 -->
 <header>
     <div class="hamburger-menu">
         <div></div>
@@ -111,11 +114,9 @@
     close.onclick = function() {
         sidebar.style.transform = 'translateX(-100%)';
     }
-
-    $('.hamburger-menu, .mask').on('click', function() {
-        $('.sidebar, .mask').toggle(); // サイドバーとマスクの表示・非表示を切り替え
-    });
 </script>
+<!-- ここまで  -->
+
 <br>
 <div class="sort-container">
 コア数:
