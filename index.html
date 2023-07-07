@@ -59,29 +59,39 @@
 
 
 
-   <div class="hamburger" onclick="toggleMenu()">
-       <div class="line"></div>
-       <div class="line"></div>
-       <div class="line"></div>
-   </div>
+<!-- ヘッダー&サイドバー部分 -->
+<header>
+    <div class="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header>
+<div class="sidebar">
+    <ul>
+        <div class="sidebar-item">
+            <a href="test.html"><li>Menu1</li></a>
+            <a href="#"><li>Menu2</li></a>
+            <a href="#"><li>Menu3</li></a>
+        </div>
+    </ul>
+</div>
+<script>
+    var sidebar = document.querySelector('.sidebar');
+    var close = document.getElementById('close');
 
-   <div id="menu">
-       <ul>
-        <li><a href="C:\Users\iniad\Documents\GitHub\team-project\index.html">ホーム</a></li>
-        <li><a href="C:\Users\iniad\Documents\GitHub\team-project\CPUs\index.html">CPU比較</a></li>
-        <li>メニュー３</li>
-       </ul>
-   </div>
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        if (sidebar.style.transform === 'translateX(0px)') {
+            sidebar.style.transform = 'translateX(-100%)';
+        } else {
+            sidebar.style.transform = 'translateX(0)';
+        }
+    });
 
-   <script>
-       document.addEventListener("click", function(event) {
-           var menu = document.getElementById("menu");
-           var hamburger = document.querySelector(".hamburger");
-
-           if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-               menu.classList.remove("open");
-           }
-       });
-   </script>
+    close.onclick = function() {
+        sidebar.style.transform = 'translateX(-100%)';
+    }
+</script>
+<!-- ここまで  -->
 </body>
 </html>
