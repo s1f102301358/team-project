@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" type="text/css" href="C:\Users\iniad\Documents\GitHub\team-project\css\style.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\iniad\Documents\GitHub\team-project\css\sidebar.css">
+    <meta charset="UTF-8">
+    <title>CPU Hub</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+</head>
+<body>
+
+<!-- ヘッダー&サイドバー部分 -->
+<header>
+    <div class="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header>
+<div class="sidebar">
+    <ul>
+        <div class="sidebar-item">
+            <a href="../index.html"><li>ホーム</li></a>
+            <a href="index.html"><li>CPU比較</li></a>
+            <a href="#"><li>お問い合わせ</li></a>
+            <!--更にメニューを追加したいときは上記のコード-->
+        </div>
+    </ul>
+</div>
+<script>
+    var sidebar = document.querySelector('.sidebar');
+    var close = document.getElementById('close');
+
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        if (sidebar.style.transform === 'translateX(0px)') {
+            sidebar.style.transform = 'translateX(-100%)';
+        } else {
+            sidebar.style.transform = 'translateX(0)';
+        }
+    });
+
+    close.onclick = function() {
+        sidebar.style.transform = 'translateX(-100%)';
+    }
+</script>
+<!-- ここまで  -->
+
+
+</body>
+</html>
