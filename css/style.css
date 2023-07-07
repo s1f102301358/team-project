@@ -76,3 +76,7 @@ body {
 #hamburger.open {
     display: none;
 }
+
+#menu ul li a {
+    color : blue;
+}
