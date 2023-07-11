@@ -415,3 +415,18 @@ Intel,Sandy Bridge,i3,Core i3-2105,2,4,3.1
 Intel,Sandy Bridge,i3,Core i3-2102,2,4,3.1
 Intel,Sandy Bridge,i3,Core i3-2100,2,4,3.1
 Intel,Sandy Bridge,i3,Core i3-2100T,2,4,2.5
+AMD,Raphael,Ryzen9,Ryzen9 7950X3D,16,32,5.7
+AMD,Raphael,Ryzen9,Ryzen9 7950X,16,32,5.7
+AMD,Raphael,Ryzen7,Ryzen7 7700X,8,16,5.4
+AMD,Raphael,Ryzen5,Ryzen5 7600X,6,12,5.3
+AMD,,Ryzen9,Ryzen9 7945HX,16,32,5.4
+AMD,,Ryzen9,Ryzen9 7940HS,8,32,5.2
+AMD,,Ryzen9,Ryzen9 7900X3D,12,24,5.6
+AMD,,Ryzen9,Ryzen9 7900X,12,24,5.6
+AMD,,Ryzen9,Ryzen9 7900,12,24,5.4
+AMD,,Ryzen9,Ryzen9 7845HX,12,24,5.2
+AMD,,Ryzen9,Ryzen9 Pro 6950HS,8,16,4.9
+AMD,,Ryzen9,Ryzen9 Pro 6950H,8,16,4.9
+AMD,,Ryzen9,Ryzen9 6980HX,8,16,5
+AMD,,Ryzen9,Ryzen9 6980HS,8,16,5
+AMD,,Ryzen9,Ryzen9 6900HX,8,16,4.9
