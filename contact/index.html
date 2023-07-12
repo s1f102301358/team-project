@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/sidebar.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>CPU Hub</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
@@ -67,10 +68,58 @@
         <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
         <textarea class="Form-Item-Textarea"></textarea>
     </div>
-    <input type="submit" class="Form-Btn" value="送信する">
+
+    <p>* 回答は自動的に記録されますが、最後に「提出」ボタンをクリックし提出を確認してください。</p>
+    <button class="btn btn-success submit" type="button"><i class="fa fa-arrow-circle-up"></i> 送信する</button>
 </div>
 
+<br><br><br>
+
+<script type="text/javascript">
+    var button = document.querySelector('.submit');
+
+    button.addEventListener('click', function() {
+        alert("すべての回答を保存しました。\nAll your answers have been saved.");
+    });
+</script>
+
 <style>
+    button {
+        color: white;
+    }
+
+    .btn-success {
+        background-color: #00a65a;
+        border-color: #008d4c;
+    }
+
+    .btn-success:hover {
+        background-color: darkgreen;
+        border-color: darkgreen;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
     .Form {
         margin-left: auto;
         margin-right: auto;

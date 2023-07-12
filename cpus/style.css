@@ -8,6 +8,7 @@ li {
     margin-bottom: 4px; /* 任意のマージンを設定 */
 }
 
+
 ul {
     list-style: none; /* 先頭の・を消すためにこの行を追加 */
     padding: 0;
@@ -15,6 +16,7 @@ ul {
 }
 
 body {
+    font-family: "Hiragino Kaku Gothic ProN", "Meiryo", "MS PGothic", sans-serif;
     margin: 0;
     background-color: #ececec;
 }

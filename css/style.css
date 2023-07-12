@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #ececec;
+    font-family: "Hiragino Kaku Gothic ProN", "Meiryo", "MS PGothic", sans-serif;
 }
 
 .sidebar li {
