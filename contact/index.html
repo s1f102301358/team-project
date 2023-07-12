@@ -47,6 +47,29 @@
 <!-- ここまで  -->
 <br><br><br>
 <div class="Form">
+    <div class="alert alert-warning problem-closed-only" role="alert" style=""><i class="fa fa-exclamation-triangle"></i> 現在回答を受け付けていません。</div>
+    <style>
+        .alert-warning, .bg-yellow, .callout.callout-warning, .label-warning, .modal-warning .modal-body {
+            background-color: #f39c12!important;
+            color: white;
+            padding: 15px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        hr {
+            display: block;
+            unicode-bidi: isolate;
+            margin-block-start: 0.5em;
+            margin-block-end: 0.5em;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            overflow: hidden;
+            border-style: inset;
+            border-width: 1px;
+        }
+    </style>
     <div class="Form-Item">
         <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
         <input type="text" class="Form-Item-Input" placeholder="山田太郎">
@@ -68,7 +91,7 @@
         <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
         <textarea class="Form-Item-Textarea"></textarea>
     </div>
-
+    <hr>
     <p>* 回答は自動的に記録されますが、最後に「提出」ボタンをクリックし提出を確認してください。</p>
     <button class="btn btn-success submit" type="button"><i class="fa fa-arrow-circle-up"></i> 送信する</button>
 </div>
