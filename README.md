@@ -1,1 +1,1 @@
-[テストページはこちら](https://s1f102301358.github.io/team-project/Dev/test.html)
+[完成版ページはこちら](https://s1f102301358.github.io/team-project/)
